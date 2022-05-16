@@ -6,7 +6,7 @@ metadata:
     app: admin-service
   name: admin-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: admin-service
@@ -23,10 +23,5 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 5005
-          requests : 
-            cpu: 0.1
-            memory: 20Mi
-          resources: {
-          
-          }
+          resources: {}
 status: {}
